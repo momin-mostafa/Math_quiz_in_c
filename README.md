@@ -36,5 +36,5 @@ How to run my code
 ------------------
 Clone my repo from github.
 Make sure you have gcc installed or IDE for c.
-Then just compile 6dec.c
+Then just compile Simple_math_quiz.c
 And run the compiled file.
