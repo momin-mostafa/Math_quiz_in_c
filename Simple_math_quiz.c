@@ -26,7 +26,14 @@ int main(){
 		dificulty = 50;
 		break;
 	}
-	int num1, num2, result, ans;
+	
+	int num1, num2, result, ans, score, total;
+	char a;
+	
+	score = 0;
+	total = 1;
+
+	do{
 	num1 = randT(dificulty);
 	num2 = randT(dificulty);
 	result = num1 + num2;
@@ -34,9 +41,17 @@ int main(){
 	scanf("%d",&ans);
 	if (ans == result){
 		printf("the result is correct.\n");
+		printf("Your score is %d / %d",++score ,total++);
+		printf("Do you want to continue\n");
+		scanf(" %c",&a);
 	}
 	else{
-		printf("the result is in correct.\n");
-	}	
+		printf("the result is incorrect.\n");
+		printf("Your score is %d / %d",score,total);
+		printf("Do you want to continue?\n");
+		scanf(" %c",&a);
+		total++;
+	}
+	}while(a == 'y');	
 	return 0;
 }
