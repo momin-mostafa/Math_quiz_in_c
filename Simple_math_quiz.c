@@ -10,7 +10,7 @@ int randT(int high)
 }
 int main()
 {
-	printf("please chose the dificulty level: \n(1 = easy , 2 = normal,3 = hard)\n");
+	printf("please choose the dificulty level: \n(1 = easy , 2 = normal,3 = hard)\n");
 	int level, dificulty;
 	scanf("%d", &level);
 	switch (level)
