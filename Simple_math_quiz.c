@@ -22,7 +22,7 @@ int main()
 		dificulty = 100;
 		break;
 	case 3:
-		dificulty = 200;
+		dificulty = 2000;
 		break;
 	default:
 		dificulty = 50;
